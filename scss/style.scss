@@ -30,10 +30,103 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 
 body {
   font-family: 'Libre Franklin', sans-serif;
+  color: $Very-Dark-Blue;
+}
+
+header {
+  text-align: center;
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  span {
+    font-weight: 300;
+    color: $Gray;
+  }
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
 }
 
 // LAYOUT
 // ======
 
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 30px;
+}
+
+header {
+  h1 {
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100px;
+    margin-bottom: 40px;
+  }
+}
+
+main.container {
+  margin: 0 0 100px;
+}
+
+form {
+  margin: 0 30px 60px;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.image-container {
+  img {
+    width: 100%;
+  }
+}
+
 // COMPONENTS
 // ==========
+
+.btn,
+input {
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-family: inherit;
+}
+input {
+  border: 1px solid $Pal-Blue;
+  color: $Very-Dark-Blue;
+  font-weight: 600;
+
+  &::placeholder {
+    color: $Pal-Blue;
+    font-weight: 300;
+  }
+
+  &:focus,
+  &:hover {
+    border: 1px solid $Gray;
+    outline: none;
+  }
+}
+
+.btn-lg {
+  border: none;
+  background-color: $Blue;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.15);
+}

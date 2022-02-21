@@ -24,30 +24,42 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+      integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="header-title">We are launching soon!</h1>
+    <header class="container">
+      <img src="images/logo.svg" alt="logo" />
+      <h1 class="header-title"><span>We are launching</span> soon!</h1>
       <p class="header-text">Subscribe and get notified</p>
     </header>
-    <main>
-      <div class="input-form">
-        <input type="text" />
-      </div>
-      <button class="btn btn-lg">Notify Me</button>
+    <main class="container">
+      <form>
+        <div class="input-form">
+          <input type="text" placeholder="Your email address..." />
+        </div>
+        <button class="btn btn-lg">Notify Me</button>
+      </form>
+
       <div class="image-container">
         <img src="images/illustration-dashboard.png" alt="diagrams" />
       </div>
     </main>
 
-    <footer>
+    <footer class="container">
       <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/edo979">edo979</a>.
       </p>
     </footer>
   </body>
