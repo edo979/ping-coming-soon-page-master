@@ -32,6 +32,27 @@ p {
 
 footer {
   text-align: center;
+  color: #969696;
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+  }
+  header p {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  input,
+  .btn {
+    font-size: inherit;
+  }
 }
 
 body {
@@ -42,6 +63,7 @@ body {
 }
 
 .container {
+  max-width: 1440px;
   margin: 30px;
 }
 
@@ -66,6 +88,11 @@ input {
   margin-bottom: 20px;
 }
 
+input,
+.btn-lg {
+  width: 100%;
+}
+
 .image-container img {
   width: 100%;
 }
@@ -78,9 +105,43 @@ input {
   margin-left: 10px;
 }
 
+@media (min-width: 900px) {
+  .container {
+    margin: 60px;
+  }
+  header img {
+    width: 150px;
+    margin-bottom: 60px;
+  }
+  header h1 {
+    margin-bottom: 40px;
+  }
+  form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 60px 120px;
+  }
+  .input-form {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .btn-lg {
+    width: 300px;
+  }
+  main.container {
+    margin-bottom: 50px;
+  }
+}
+
 .btn,
 input {
-  width: 100%;
   padding: 15px 30px;
   border-radius: 30px;
   font-family: inherit;
@@ -148,4 +209,16 @@ input:focus, input:hover {
 .icon-container:hover {
   background-color: #4f7df3;
   color: white;
+}
+
+@media (min-width: 900px) {
+  .icon-container {
+    width: 35px;
+    height: 35px;
+  }
+  input,
+  .btn-lg {
+    padding: 25px 50px;
+    border-radius: 40px;
+  }
 }
