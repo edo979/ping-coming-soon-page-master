@@ -96,6 +96,14 @@ input {
   }
 }
 
+.social-links {
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  margin-left: 10px;
+}
+
 // COMPONENTS
 // ==========
 
@@ -129,4 +137,24 @@ input {
   color: white;
   font-weight: 600;
   box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.15);
+}
+
+.icon-container {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $Pal-Blue;
+  border-radius: 50%;
+  color: $Blue;
+
+  i {
+    display: inline-block;
+    margin-top: 6px;
+    font-style: normal;
+  }
+
+  &:hover {
+    background-color: $Blue;
+    color: white;
+  }
 }

@@ -70,6 +70,14 @@ input {
   width: 100%;
 }
 
+.social-links {
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  margin-left: 10px;
+}
+
 .btn,
 input {
   width: 100%;
@@ -116,4 +124,24 @@ input:focus, input:hover {
   font-weight: 600;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  color: #4f7df3;
+}
+
+.icon-container i {
+  display: inline-block;
+  margin-top: 6px;
+  font-style: normal;
+}
+
+.icon-container:hover {
+  background-color: #4f7df3;
+  color: white;
 }
