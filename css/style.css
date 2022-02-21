@@ -126,6 +126,10 @@ input:focus, input:hover {
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
+.btn-lg:hover {
+  opacity: 0.85;
+}
+
 .icon-container {
   display: inline-block;
   width: 30px;

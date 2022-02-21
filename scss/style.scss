@@ -137,6 +137,10 @@ input {
   color: white;
   font-weight: 600;
   box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.15);
+
+  &:hover {
+    opacity: 0.85;
+  }
 }
 
 .icon-container {
