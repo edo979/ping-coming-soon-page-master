@@ -3,6 +3,8 @@ const btn = document.querySelector('.btn-lg'),
   inputContainer = document.querySelector('.input-form')
 
 btn.addEventListener('click', (e) => {
+  e.preventDefault()
+
   const re = /\S+@\S+\.\S+/
   const isValidEmail = re.test(input.value)
 
