@@ -39,19 +39,12 @@ footer {
   html {
     font-size: 20px;
   }
-  header h1 {
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-  }
   header p {
-    font-size: 1.8rem;
-  }
-  p {
     font-size: 1rem;
   }
-  input,
-  .btn {
-    font-size: inherit;
+  header h1 {
+    font-size: 2.15rem;
+    letter-spacing: 2px;
   }
 }
 
@@ -63,7 +56,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 635px;
   margin: 30px;
 }
 
@@ -109,12 +102,14 @@ input,
   .container {
     margin: 60px;
   }
-  header img {
-    width: 150px;
+  header.container {
+    margin-bottom: 45px;
+  }
+  header.container img {
     margin-bottom: 60px;
   }
-  header h1 {
-    margin-bottom: 40px;
+  header.container h1 {
+    margin-bottom: 30px;
   }
   form {
     display: -webkit-box;
@@ -126,17 +121,20 @@ input,
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0 60px 120px;
+    margin: 0 0 90px;
   }
   .input-form {
     width: 100%;
-    margin-right: 20px;
+    margin-right: 15px;
   }
   .btn-lg {
-    width: 300px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin-top: 0;
+    width: 200px;
   }
   main.container {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
 }
 
@@ -212,14 +210,13 @@ input:focus, input:hover {
 }
 
 @media (min-width: 900px) {
-  .icon-container {
-    width: 35px;
-    height: 35px;
-  }
   input,
   .btn-lg {
-    padding: 25px 50px;
+    padding: 20px 30px;
     border-radius: 40px;
+  }
+  .icon-container {
+    font-size: 0.9rem;
   }
 }
 
@@ -229,6 +226,6 @@ input:focus, input:hover {
 
 .error p {
   margin: 5px 30px 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #ff5263;
 }
