@@ -15,21 +15,28 @@ $Very-Dark-Blue: hsl(209, 33%, 12%);
 
 $break-point: 900px;
 
+/*
 // IMPORTS
 // =======
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
+/*
 // RESET
 // =====
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/*
 // TYPOGRAPHY
 // ==========
+*/
 
 body {
   font-family: 'Libre Franklin', sans-serif;
@@ -54,9 +61,19 @@ p {
   font-weight: 400;
 }
 
+.btn-lg,
+input {
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
 footer {
   text-align: center;
   color: $Gray;
+
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: $break-point) {
@@ -76,8 +93,10 @@ footer {
   }
 }
 
+/*
 // LAYOUT
 // ======
+*/
 
 body {
   display: grid;
@@ -171,8 +190,10 @@ input,
   }
 }
 
+/*
 // COMPONENTS
 // ==========
+*/
 
 .btn,
 input {
@@ -242,8 +263,10 @@ input {
   }
 }
 
+/*
 // FORM VALIDATION ERROR
 // =====================
+*/
 
 .error {
   input {

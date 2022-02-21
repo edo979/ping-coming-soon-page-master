@@ -1,4 +1,12 @@
+/*
+// IMPORTS
+// =======
+*/
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/*
+// RESET
+// =====
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,6 +14,10 @@
   padding: 0;
 }
 
+/*
+// TYPOGRAPHY
+// ==========
+*/
 body {
   font-family: 'Libre Franklin', sans-serif;
   color: #151f29;
@@ -30,9 +42,19 @@ p {
   font-weight: 400;
 }
 
+.btn-lg,
+input {
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
 footer {
   text-align: center;
   color: #969696;
+}
+
+footer p {
+  font-size: 0.8rem;
 }
 
 @media (min-width: 900px) {
@@ -48,6 +70,10 @@ footer {
   }
 }
 
+/*
+// LAYOUT
+// ======
+*/
 body {
   display: -ms-grid;
   display: grid;
@@ -138,6 +164,10 @@ input,
   }
 }
 
+/*
+// COMPONENTS
+// ==========
+*/
 .btn,
 input {
   padding: 15px 30px;
@@ -220,6 +250,10 @@ input:focus, input:hover {
   }
 }
 
+/*
+// FORM VALIDATION ERROR
+// =====================
+*/
 .error input {
   border: 1px solid #ff5263;
 }
