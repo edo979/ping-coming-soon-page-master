@@ -28,8 +28,8 @@ function showErrorMsg(msg, isShow = true) {
   pEl.innerText = msg
 
   if (isShow) {
-    pEl.classList.add('error')
+    inputContainer.classList.add('error')
   } else {
-    pEl.classList.remove('error')
+    inputContainer.classList.remove('error')
   }
 }
